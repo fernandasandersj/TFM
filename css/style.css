@@ -1,0 +1,4304 @@
+/* Parametros */
+
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,500&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+/* Normalizadores */
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        /* outline: 2px dashed purple; */
+    }
+
+
+    a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    i{
+    font-size: 25px;
+    }
+
+    button{
+        font-family: 'Noticia Text', serif;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Playfair Display', serif;
+        font-weight: normal;
+        letter-spacing: 4px;
+    }
+
+    h1{
+        font-size: 34px ;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    h3{
+        font-size: 11px ;
+    }
+
+    h4{
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    
+    p{
+        font-size: 9px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+    }
+
+    span{
+        font-size: 6px;
+        color: #FFF9E9;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+    }
+
+    img{
+        border-radius: 10px;
+    }
+
+    .menu_mob_2 button{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    ol{
+        font-family: 'Roboto', sans-serif;
+        font-size: 9px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-weight: lighter;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+ /*------------------ Reglas recursivas------------------------- */
+   
+      /* CLASES JAVASCRIPT */
+
+      .d-body{
+        overflow: hidden;
+        
+    }
+
+    .js_d_none{
+        display: none !important;
+    }
+
+    
+    .js_move0{
+        transform: translateX(0%) !important;
+    }
+
+    .OverlayG{
+        width: 100%;
+        height: 1000vh;
+        background-color: #041c31d2;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1400;
+        display: none;
+    }
+
+    
+
+    /* FIN CLASES JAVASCRIPT */
+
+    .btn_foto,
+    .btn_diseno{
+        background-color: transparent;
+        border: none;
+        font-size: 23px;
+        color:white;
+        
+        margin: auto;
+    }    
+
+    .Foto_desp{
+        display: none;
+    }
+    .Foto_desp li{
+        margin: 10px 5px;
+        transition: all 0.5s ease-out ;
+    }
+
+    .Foto_desp a,
+    .menu_diseno a{
+        font-size: 15px;
+    }
+
+    .menu_diseno{
+        display: none;
+    }
+
+    .btn_seemore2{
+        width: 112px;
+        height: 32px;
+        border: 1px solid #041C31;
+        background-color: transparent;
+        margin: 30px auto 20px ;
+        font-size: 9px;
+        color: #041C31;
+        border-radius: 5px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+
+    .btn_seemore2:hover,
+    .btn_seemore1:hover,
+    .rrss_mob a:hover,
+    .rrss_desktop a:hover{
+        transform: scale(1.05);
+        color: #F2C823;
+        border: 1px solid #F2C823;
+        transition: all 0.5s ease-out;
+    }
+
+
+    .btn_cta{
+        width: 112px;
+        height: 32px;
+        background-color: #36B0B7;
+        border: none;
+        margin: 30px auto 20px ;
+        font-size: 9px;
+        color: #041C31;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+
+    .btn_cta:hover{
+        background-color: transparent;
+        border: 1px solid #041C31;
+        transform: scale(1.1);
+        transition: all 0.5s ease-out;
+        font-weight: bold;
+    }
+
+/* PAGINA RETRATO Y VIAJES */
+
+    .galeriaR {
+        width: 95%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .galeriaR h2{
+        padding-top: 150px;
+        margin-bottom: 20px ;
+    }
+
+    .galeriaR img{
+        width: 100px;
+        height: 100px;
+        margin: -1px;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .btn_fotografia{
+        width: 65%;
+        margin: auto;
+        /*flex*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Pagina terminos */
+    
+    .terminos p,
+    .terminos a,
+    .terminos li{
+        font-size: 10px !important;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+
+    .terminos a{
+        justify-content: flex-start;
+    }
+
+    /* Página Video  */
+
+    .iframe_video{
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .video_s1_content{
+        width: 310px;
+        height: 171px;
+        background-color: #FFF9E9;
+        border: none;
+    }
+
+    /*------------------ Reglas generales------------------------------- */
+
+    /* Elementos Comunes */
+
+    .btn_up {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #F2C823;
+        border-radius: 50%;
+        background-color: transparent;
+        position: fixed;
+        top: 89%;
+        right: 13px;
+        z-index: 1399;
+    }
+
+    .btn_up i{
+        font-size: 20px;
+        color: #F2C823;
+    }
+
+    /* Fin Elementos Comunes */
+
+    /* GENERAL */
+
+    .marco{
+        width: 100%;
+        max-width: 3840px;
+        margin: auto;
+    }
+    
+    /* HEADER */
+
+    header{
+        width: 100%;
+        height: 138px;
+        position: absolute;
+        z-index: 1500;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+    }
+
+    .menu_desktop,
+    .nav_desktop,
+    .rrss_desktop{
+        display: none;
+    }
+
+    .logo_div{
+        width: 95%;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        padding-left: 10px;
+        width: 110px;
+        height: 102px;
+    }
+
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn_menu_mob{
+        background-color: transparent;
+        border: none;
+    } 
+
+    .btn_menu_mob i{
+        font-size: 30px;
+        padding: 2px 6px;
+        position: relative;
+        z-index: 2000;
+    }
+
+
+    /* Menu_mob desplegable*/
+
+    .menu_mob{
+        width: 78%;
+        background-color: #041c31d8;
+        border-radius: 9px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 2000;
+        display: none;
+        transform: translateX(+100%);
+        transition: transform 1s;
+    }
+
+    .btn_close{
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #EDF7FF;
+        color: #EDF7FF;
+        position: fixed;
+        top: 7px;
+        right: 21px;
+        z-index: 2010;
+    }
+
+    .btn_close i{
+        font-size: 11px;
+    }
+
+    .menu_overfow{
+        max-height: 370px;
+        overflow: auto ;
+        scroll-behavior: smooth;
+    }   
+
+    .menu_mob_2 i {
+        padding-left: 22px;
+    }
+
+    .menu_mob_2 li{
+        list-style: none;
+        text-align: center;
+        margin: 27px 0px;
+    }
+
+    .menu_mob_2 a{
+        color: #EDF7FF;
+        font-size: 23px;
+    }
+
+    .inicio{
+        width: 30% !important;
+    }
+
+
+    /* Fin menu mob */
+
+    /* RRSS Header */
+    .rrss_mob{
+        width: 100%;
+        padding-left: 20px;
+        /*flex*/
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    
+
+    .rrss_mob a{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 1px solid #041C31;
+        margin-right: 7px ;
+        color: #041C31;
+    }
+
+    .rrss_mob i{
+        font-size: 10px;
+    }
+
+    /* FIN RRSS HEADER */
+
+    /* FIN HEADER */
+
+
+    /* Footer */
+
+    .footer_mob{
+        width: 100%;
+        height: 31px;
+        background-color: #041C31;
+        /*flex*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer_mob a{
+        font-size: 6px;
+        color: #FFF9E9;
+        letter-spacing: 1px !important;
+        
+    }
+
+    .footer_mob span{
+        font-weight: normal;
+    }
+
+    .rrss_footer{
+        /*flex*/
+        display: flex;
+    
+    }
+
+    .rrss_footer a{
+        color: #FFF9E9;
+        margin: 0px 3px;
+    }
+
+    .rrss_footer i{
+        font-size: 6px;
+    }
+
+
+    /* Reglas Especificas */
+
+    /* Section 1  HOME */ 
+
+    .s1 {
+        width: 100%;
+    }
+
+    .s1 > img{
+        width: 100%;
+        height: 505px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0px !important;
+    }
+
+
+    .s1 h2 {
+        width: 94%;
+        line-height: 34px;
+        position: absolute;
+        top: 181px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        z-index: 3;
+    }
+
+    .s1 h2 a{
+        justify-content: flex-start;
+        color: #041C31;
+        letter-spacing: 1px;
+      
+    }
+
+    .s1 h2 a:hover{
+        color: #EDF7FF;
+        transition: all 0.5s ease-out;
+        font-weight: bold;   
+    }
+
+    /* Section 2 */
+
+    .s2 {
+        width: 100%;
+    }
+
+    .s2 h1{
+        width: 100%;
+        position: relative;
+        top: 21px; 
+        left: 0px;
+        right: 0px;
+        margin: auto;       
+        text-align: center;
+        z-index: 40;
+    }
+
+    .s2 .galeria div:hover{
+        transform: scale(1.03);
+        transition: all 0.5s ease-out;
+    }
+
+    .galeria{
+        width: 100%;
+        padding: 0px  4.5% ;
+        position: relative;
+        z-index: 30;
+    }
+
+    .galeria div{
+        width: 100%;
+        position: relative;
+        z-index: 20;
+        text-align: center;
+
+        
+    }
+        .s2 img{
+        width: 279px;
+        height: 413px;
+        margin-bottom: 7px;
+
+    }
+
+    .leyenda{
+        transform: rotate(90deg);
+        width: 100px;
+        font-size: 9px;
+        font-family: 'Noticia Text', serif;
+        letter-spacing: 1px;  
+        position: absolute;
+        right: -50px;
+        top: 197px;
+    }
+
+    .btn_seemore1 {
+        width: 112px;
+        height: 32px;
+        border: 1px solid #FFF9E9;
+        background-color: transparent;   
+        color: #FFF9E9;
+        font-size: 10px;
+        position: absolute;
+        top: 86%;
+        left: 0px;
+        right: 0px;
+        margin: auto;       
+        z-index: 30;
+        border-radius: 5px;
+    }
+
+    /* Section 3  */
+
+    .s3{
+        width: 100%;
+        position: relative;
+        z-index: 4;
+        margin-top: 80px;
+    }
+
+    .div1{
+        width: 100% ;
+        height: 318px;
+    }
+
+    .s3_content h1{
+        position: absolute;
+        top: -24px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        z-index: 70;
+        text-align: center;
+    }
+
+    .s3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        z-index: 4;
+        }
+
+    .s3_exp{
+        position: relative;
+        z-index: 4;
+        text-align: center;
+    }
+
+    .s3 i{
+        margin: 10px;
+        color: #F2C823;
+        position: relative;
+        z-index: 4;
+    }
+
+    .s3 h3{
+        position: relative;
+        z-index: 4;
+    }
+
+    .s3 p{
+        width: 60%;
+        position: relative;
+        z-index: 4;
+        margin: 14px auto;
+    }
+
+    .s3 a{
+        position: relative;
+        z-index: 4;
+    }
+
+
+    /* section 4   */
+
+    .s4 h1{
+        position: relative;
+        top: 37px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        z-index: 70;
+    }
+
+    .s4_content h1{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .caja{
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .s4_content i{
+        color:#F2C823;
+    }
+
+    .s4_exp{
+        text-align: center;
+        margin-top: 18px; 
+    }
+
+    .s4_content h3{
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .s4_content p{
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .ctn_instagram{
+        margin-bottom: 19px !important;
+    }
+
+    /*---------- PAGINA FOTOGRAFIA -------- */
+
+    .foto_s1 {
+        padding-top: 171px;
+        
+    }
+
+    .foto_s1 h2 {
+        text-align: center;
+    }
+
+    .galeriaP{
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .enlace_foto{
+        width: 141px;
+        height: 141px;
+        margin:  30px 8px 7px ;
+    }
+
+    .texto_foto{
+        text-transform: uppercase;
+        color: #041C31;
+    }
+
+    
+    .texto_foto:visited{
+        color: #F2C823;
+    }
+ 
+    .galeriaP img{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+    
+    .galeriaP img:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-out;
+    }
+
+    .btn_fotografia .btn_seemore2{
+       margin: 30px 10px 20px ;
+    }
+
+
+    .btn_fotografia .btn_cta{
+        margin: 30px 10px 20px ;
+    }
+
+    .footer_foto{
+        padding-top: 15%;
+    }
+
+  
+    
+
+    /*-------------------- PAGINA ABOUT ME  ----------*/
+
+    /* Section 1 */
+    .about_me_s1{
+        width: 100%;
+        padding-top: 155px;
+    }
+
+    .about_me_s1 div{
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .about_me_s1 h2{
+        text-align: center;
+    }
+
+    .about_me_s1 img{
+        width: 115px;
+        height: 115px;
+        margin: 10px 50px;
+    }
+
+    .about_me_s1 p{
+        width: 50%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    /* Section 2 */
+
+    .about_me_s2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_me_s2 div{
+        width: 138px;
+        height: 138px;
+        border: 1px solid #36B0B7;
+        border-radius: 50%;
+        margin: 28px auto;
+    }
+
+    .about_me_s2 div:hover{
+        transform: all scale(1.2);
+        transition: all .5s ease-out;
+        background-color: #E9FEFF;
+        border: 1px solid #E9FEFF;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-weight: bold;
+    }
+
+    .about_me_s2 a{
+        text-decoration: none;
+        color: #041C31;
+    }
+
+    /* .about_me_s2 a:hover{
+        color: #E9FEFF;
+        font-weight: bold;
+        transition: all .5s ease-out;
+    }
+
+    .about_me_s2 i:hover{
+        color: #E9FEFF;
+    } */
+
+    .about_me_s2 i{
+        color: #36B0B7;
+        padding-top: 33px;
+        margin-bottom: 14px;    
+    }
+
+    /* Section 3 */
+
+    .about_me_s3{
+        width: 100%;
+        height: 154px;
+        background-color: #36B0B7;
+        margin: 40px auto;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .about_me_s3 div{
+        width: 32px;
+        height: 32px;
+        margin: 0px 16px;
+    }
+
+    .about_me_s3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0px !important;
+    }
+
+    .about_me_s3 img:hover{
+        transform: scale(1.2);
+        transition: all 0.5s ease-out;
+    }
+    
+    
+    /*---------------------- PAGINA CONTACTO--------------  */
+
+    .contacto_s1{
+        width: 100%;
+    }
+
+    .contacto_s1_content{
+        width: 100%;
+        text-align: center;
+        padding-top: 163px;
+    }
+
+    .contacto_s1_content img{
+        width: 197px;
+        height: 294px
+        ;
+    }
+    .contacto{
+        margin: 20px auto 14px;
+    }
+
+    .contacto h1{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+    }
+
+    .contacto_s1 input{
+        width: 291px;
+        height: 40px;
+        background-color: transparent;
+        color: #041C31;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-family: 'Noticia Text', serif;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+        border: 1px solid #041C31;
+        border-radius: 4px;
+        padding-left: 5px;
+
+    }
+
+    .contacto_s1 textarea {
+        width: 291px;
+        height: 183px;
+        color: #041C31;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-family: 'Noticia Text', serif;
+        letter-spacing: 3px;
+        border: 1px solid #041C31;
+        background-color: transparent;
+        border-radius: 4px;
+        padding: 5px 5px 0px;
+    }
+
+    .contacto_p{
+        text-align: center;
+        margin: 30px auto;
+        width: 80%;
+    }
+
+    .contacto_p a{
+        color: #041C31;
+    }
+    
+    .contacto_p a:hover{
+        color: #F2C823;
+    }
+
+    .modal_contacto{
+        width: 278px;
+        height: 291px;
+        background-color: #041C31;
+        border-radius: 5px;
+        color: #E9FEFF;
+        position: fixed;
+        top: 165px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        z-index: 3000;
+        text-align: center;
+        display: none;
+    }
+
+    
+    .modal_contacto p{
+        width: 90%;
+        margin: 48px auto 0px;
+    }
+
+    .modal_contacto br{
+        margin: 10px auto;
+    }
+
+    .btn_close_modal{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        background-color: transparent;
+        border: 1px solid #E9FEFF;
+        border-radius: 50%;
+        margin: 97px auto 0px;
+    }
+
+    .btn_close_modal i{
+        color: #E9FEFF;
+    }
+
+
+
+
+    /*---------------------------- WEB DESIGN PAGINA ------------- */
+
+    /* Section  1 web design */
+
+    .webdesign_s1 {
+        width: 100%;
+        padding-top: 160px;
+    }
+
+    .webdesign_s1 h2{
+        text-align: center;
+    }
+
+    .webdesign_s1 p{
+        width: 90%;
+        margin: 16px auto;
+        text-align: center;
+    }
+
+    /* Section 3 |Pagina wbe design */
+
+    .webdesign_s2{
+        width: 100%;
+        height: 972px;
+        background-color: #E9FEFF;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .webdesign_s2 img{
+        margin: 10px 24px;
+        width: 167px;
+        height: 298px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    /* Section 3 Pagina web design */
+
+    .iconoweb{
+        width: 70%;
+        margin: 25px auto;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .iconoweb p{
+        margin-left: 20px;
+    }
+
+    .iconoweb i{
+        color: #F2C823;
+        margin-right: 20px;
+    }
+
+    .linea_webdesign_s3{
+            width: 50%;
+            height: 1px;
+            background-color: #041C31;
+            margin: auto;
+    }
+    
+    .iconoweb p {
+        width: 80%;
+        margin: 22px auto;
+        text-align: left;
+    }
+
+    .texto_2{
+        width: 66%;
+        margin: 22px auto;
+        text-align: center;
+    }
+
+   /* Section 4 Pagina Web design */
+
+
+    .web_s4_2{
+        width: 100%;
+    }
+    
+    .img_muestra{
+        width: 100%;
+        height: 386px;
+        margin: 30px auto 0px;
+    }
+    
+    .img_mob {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .img_tab{
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .img_dsk{
+        display: none;
+        width: 100%;
+    }
+
+    .texto{
+        width: 90%;
+        margin: auto;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+ 
+    .web_s4_2 i{
+        color: rgb(255, 196, 0);
+    }
+    .web_s4_2 button{
+        width: 61px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+    }
+
+    /* Section 5 Web design  */
+
+    .webdesign_s5{
+        width: 100%;
+        height: 83px;
+        margin: 20px auto;
+        background-color: #36B0B7;
+        /* flex */
+        display: flex;
+    }
+
+    .icono_webdesign_s5{
+        width: 100%;
+        color: #041C31;
+        margin: auto;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icono_webdesign_s5 i{
+        color: #041C31;
+        margin-right: 23px;
+    }
+
+    .icono_webdesign_s5 p{
+        width: 70%;
+    }
+
+    /* Section 6 Web design */
+
+    .web_s6{
+        width: 100%;
+        height: 108px;
+        background-image: url(../img/prototiposweb.jpg);
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 30px;
+    }
+
+    .web_s7{
+        width: 100%;
+        height: 55px;
+        margin-bottom: 22px;
+    }
+
+    .web_s7 p{
+        width: 70%;
+        margin: auto;
+    }
+
+     /* PAGINA PROTOTIPO  */
+
+     .sect_1_prot h2{
+        padding-top: 148px;
+        text-align: center;
+    }
+
+    .prot_1 div{
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .prot_1 h3{
+        text-align: center;
+        padding-top: 30px;
+    }
+
+
+    .prot_1 img{
+        width: 167px;
+        height: 298px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 20px 30px;
+    }
+
+    .descripcion_prot{
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+    
+    .prot_2 div{
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .prot_2 h3{
+        width: 85%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .prot_2 img{
+        width: 90%;
+        height: 300px;
+        object-fit: contain;
+        object-position: center;
+        margin: auto;
+    }
+
+ 
+    
+
+    /* Pagina VIDEO  */
+
+     /* Section 1 | Video  */
+
+    
+    .video_s1 h2 {
+        padding-top: 150px;
+        text-align: center;
+    }
+
+   
+
+    /* Section 2 | Video  */
+
+    .video_s2 div{
+        width: 70%;
+        margin: 30px auto;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video_s2 p{
+        font-size: 12px;
+    }
+
+    .video_s2 i{
+        color:#F2C823;
+        margin-right: 15px;
+    }
+
+     /* Section 3 | Video  */
+
+    .video_s3{
+        width: 100%;
+        margin: auto;
+    }
+
+    /* CARRUSEL VIDEO */
+
+    .video_s3_content .carousel {
+        width: 244px;
+        height: 434px;
+        background: #FAFAFA;
+        margin: 0px auto;
+      }
+      
+      .video_s3_content .carousel-cell {
+        width: 244px;
+        height: 434px;
+        margin-right: 10px;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+      }
+      
+      /* cell number */
+      .video_s3_content .carousel-cell:before {
+        display: none;
+        text-align: center;
+        content: counter(gallery-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+      }
+      
+      
+      /* smaller, dark, rounded square */
+      .video_s3_content .flickity-prev-next-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background: #333;
+      }
+      .video_s3_content .flickity-prev-next-button:hover {
+        background: #F90;
+      }
+      /* arrow color */
+      .video_s3_content .flickity-prev-next-button .arrow {
+        fill: #041C31;
+      }
+      .video_s3_content .flickity-prev-next-button.no-svg {
+        color:#041C31;
+      }
+      /* position outside */
+      .video_s3_content .flickity-prev-next-button.previous {
+        left: 6px;
+        border: none;
+        background-color: transparent;
+        color: #F2C823;
+      }
+      .video_s3_content .flickity-prev-next-button.next {
+        border: none;
+        background-color: transparent; 
+        right: 0px;
+      }
+
+      .video_s3_content .flickity-prev-next-button .flickity-button-icon {
+        position: absolute;
+        left: 12%;
+        top: 20%;
+        width: 60%;
+        z-index: 1600;
+      }
+
+
+      .flickity-prev-next-button.next {
+        right: -51px;
+      }
+
+      .video_s3_content .flickity-page-dots{
+          list-style: none;
+      }
+
+   
+      .video_s3_content .carousel-cell video{
+          width: 100%;
+          height: 100%;
+      }
+    
+      
+
+
+    /* FIN CARRUSEL VIDEO */
+
+    .video_s3_content p {
+        width: 60%;
+        margin: 86px auto;
+        text-align: center;
+    }
+
+     /* Section 4 | Video  */
+   
+    .video_s4{
+        width: 100%;
+        /*flex*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .video_s4 div{
+        width: 136px;
+        height: 136px;
+        background-color: black;
+        margin: 15px auto;
+    }
+
+    .video_s4 video{
+        width: 100%;
+        height: 100%;
+    }
+
+    .video_s4 p{
+        width: 50%;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    /* Section 5 | Video  */
+
+    #MotionGraphics{
+        margin-bottom: 40px;
+    }
+    
+    /* Pagina Terminos y Condiciones  */
+
+   
+    .terminos h3{
+        padding-top: 150px;
+        text-align: center;
+    }
+    
+    
+
+
+/*-------------------------- RESPONSIVE ------------------- */
+
+@media (min-width: 568px){
+
+    /*  GENERAL */
+
+    header{
+        height: 117px;
+    }
+
+    .logo {
+        padding-left: 11px;
+        width: 99px;
+        height: 83px;
+    }
+
+    .rrss_mob {
+        padding-left: 12px;
+    }
+
+    .btn_close{
+        right: 237px;
+    }
+
+    .menu_overfow {
+        max-height: 310px;
+    }
+
+    .btn_close i{
+        font-size: 19px;
+    }
+    /* ESPECIFICOS */
+
+    /*HOME */
+
+  .menu_mob{
+        width: 50%;
+        right: 28px;
+    }
+
+    .s1 h2{
+        top: 127px;
+    }
+
+    
+    .s1 > img {
+        height: 320px;
+    }
+
+    /* Section2 */
+
+
+    .galeria{
+        width: 100%;
+        /*flex*/
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .galeria div {
+        width: 38%;
+    }
+
+    .galeria img {
+        width: 174px;
+        height: 237px;
+    }
+
+    .leyenda {
+        right: -51px;
+        top: 110px;
+    }
+
+    .btn_seemore1 {
+        top: 78%;
+    }
+    
+    /* Section 3 */
+
+    .div1 {
+        width: 58%;
+        height: 246px;
+        margin: 0px 21%;
+    }
+
+    /* Section 4 */
+
+    .s4 h1 {
+        top: 28px;
+        width: 60%;
+    }
+
+    .caja {
+        width: 292px;
+        height: 292px;
+        margin-left: 138px;
+    }
+
+    /*--- Pagina Fotografia---- */
+
+    .galeriaP {
+        width: 90%;
+        margin: auto;
+    }
+
+    .enlace_foto {
+        margin: 30px 25px;
+    }
+
+   
+    /* Pagina Viajes | Fotografia */
+    .galeriaR img {
+        width: 142px;
+        height: 142px;
+    }
+
+
+
+/* Pagina diseño web  */
+
+    /* Section 1 | Pagina Diseño web*/
+
+    .webdesign_s1{
+    padding-top: 123px;
+
+    }
+
+    .web_texto {
+        width: 59%;
+    }
+
+    .webdesign_s2{
+        height: 324px;
+        flex-wrap: nowrap;
+    }
+
+    .texto_2 {
+        width: 46%;
+    }
+
+    .webdesign_s2 img{
+        margin: 10px auto;   
+    }
+
+
+    /* Section 3 | Pagina Diseño web*/
+
+    .iconoweb {
+        width: 41%;
+    }
+
+    /* Section 4 | Pagina Diseño web*/
+
+    .img_muestra {
+        width: 45%;
+        height: 308px;
+        margin: 39px auto 0px;
+    }
+
+    /* Section 5 | Pagina Diseño web*/
+
+    .icono_webdesign_s5 {
+        width: 54%;
+    }
+
+
+     /* PAGINA PROTOTIPO  */
+
+     .sect_1_prot h2{
+        padding-top: 127px;
+    }
+
+    .prot_1,
+    .prot_2{
+       flex-wrap: nowrap;
+    }
+
+
+    .prot_1 img{
+        width: 30%;
+        margin: 20px auto;
+    }
+
+    .descripcion_prot{
+        width: 95%;
+        margin: 10px auto;
+        text-align: left;
+    }
+
+    .prot2_div div{
+        width: 33%;
+        align-items: center;
+    }
+
+    .prot_2 img {
+        width: 100%;
+        height: 252px;
+    }
+
+    .prot2_div p{
+        text-align: center;
+    }
+    
+    /* ----PAGINA VIDEO---- */
+
+     /* Section 1 | Pagina Video  */
+
+    .video_s1_content {
+        width: 499px;
+        height: 282px;
+    }
+
+    /* Section 3 | Pagina Video  */
+
+    .s3_video_instagram {
+        width: 175px;
+        height: 270px;
+    }
+
+    /* Section 4 | Pagina video */
+    .video_s4 div {
+        margin: 15px 45px;
+    }
+
+    /* PAGINA SOBRE MI  */
+
+    /* Section 1  | PAgina About me */
+
+    
+
+    .about_me_s1 div{
+        margin: auto;
+        flex-wrap: nowrap;
+    }
+
+    
+    .about_me_s1 img {
+        width: 140px;
+        height: 140px;
+        margin: 0px;
+    }
+
+
+    .about_me_s1 p {
+        width: 35%;
+        margin: 20px 35px;
+        text-align: left;
+    }
+    
+    /* Section 2 | Pagina About me  */
+
+    .about_me_s2{
+        /*flex*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /* Section 3 | Pagina Sobre mi */
+
+    .about_me_s3 {
+        width: 100%;
+        height: 210px;
+    }
+
+    .about_me_s3 div {
+        width: 40px;
+        height: 40px;
+        margin: 0px 31px;
+    }
+    
+    /* Pagina Contacto */
+    
+    .modal_contacto{
+        height: 264px;
+        top: 12px;
+    }
+
+    .btn_close_modal {
+        margin: 61px auto 0px;
+    }
+}
+
+/* --------------- RESPONSIVE IPAD------------------------ */
+
+@media (min-width: 768px){
+
+    /* Elementos Comunes  */
+      .btn_up {
+        width: 54px;
+        height: 54px;
+        top: 88%;
+        right: 28px;
+    }
+
+    .btn_up i {
+        font-size: 27px;
+    }
+
+    /* Normalizadores*/
+
+    i{
+        font-size: 40px;
+    }
+    h1{
+        font-size: 54px;
+    }
+    
+    h2 {
+        font-size: 31px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    p{
+        font-size: 18px;
+    }
+    
+    span{
+        font-size: 15px;
+    }
+
+    ol{
+        font-size: 15px;
+    }
+
+/*  Recursivas */
+
+    .btn_seemore1{
+        width: 150px;
+        height: 50px;
+        font-size: 13px;
+        top: 82%;
+    }
+
+    .btn_seemore2,
+    .btn_cta{
+        width: 150px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    
+
+
+/* General */
+
+    /* Header */
+
+    header  {
+        height: 181px;
+    }
+
+    .logo{
+        width: 148px;
+        height: 148px;
+    }
+
+    .btn_menu_mob i {   
+        font-size: 60px;
+        padding: 16px;
+    }
+
+    .rrss_mob {
+        padding-left: 26px;
+    }
+
+    .rrss_mob a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rrss_mob i{
+        font-size: 14px;
+    }
+
+    /* Menu MOB */
+
+    .menu_mob {
+        height: 656px;
+    }
+    
+    .btn_close {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+        top: 13px;
+        right: 325px;
+    }
+
+    .menu_mob_2 li {
+        margin: 55px 0px;
+    }
+
+    .menu_mob_2 a,
+    .menu_mob_2 button{
+        font-size: 34px !important;
+    }
+
+    .menu_overfow {
+        max-height: 653px;
+    }
+
+    /* Footer */
+
+    .footer_mob{
+        height: 70px;
+    }
+    
+    .footer_mob a{
+        font-size: 15px;    
+        margin: 0px 7px;
+    }
+    
+    .rrss_footer i{
+        font-size: 22px;
+    }
+    
+
+
+/* EspecificosL */
+
+/* HOME */
+
+    /* Section 1 | Home */
+
+    .s1 h2 {
+        top: 379px;
+        line-height: 55px;
+    }
+
+    .s1 img{
+        height: 1000px;
+
+    } 
+    
+    /*Section 2 | Home   */
+
+    .s2 h1 {
+        top: 28px;        
+    }
+     
+    .galeria div {
+        width: 50%;
+    }
+
+    
+    .galeria img {
+        width: 311px;
+        height: 435px;
+    }
+
+    .leyenda {
+        right: -57px;
+        top: 272px;
+        font-size: 12px;
+        width: 35%;
+    }
+
+    /* Section 3 | Home */
+
+    .s3_content h1 {
+        top: -41px;
+    }
+
+    .div1 {
+        height: 567px;
+        width: 85%;
+        margin: 0px 69px;
+    }
+
+    .s3 i {
+        font-size: 40px;
+    }
+
+    /* Section 4 */
+
+
+    .s4 h1 {
+        top: 93px;
+        width: 78%;
+        position: relative;
+        left: 17px;
+        margin: 0px;
+    }
+
+    .s4_content {
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .caja{
+        margin: 0px auto;
+        width: 365px;
+        height: 395px;
+    }
+
+    .s4_exp{
+        width: 49%;
+    }
+
+    .s4_content i {
+        font-size: 40px;
+    }
+
+
+    /* Pagina Fotografia */
+
+    /* Section 1 | Pagina Foto */
+
+
+    .foto_s1 h2 {
+        padding-top: 62px;
+    }
+
+    .enlace_foto {
+        width: 250px;
+        height: 250px;
+        margin: 46px 30px;
+    }
+
+    .texto_foto{
+        text-transform: uppercase;
+    }  
+
+
+    /* Pagina Viajes | Fotografia */
+
+    .galeriaR h2 {
+        padding-top: 200px;
+        margin-bottom: 23px;
+    }
+
+    .galeriaR img {
+        width: 205px;
+        height: 205px;
+    }
+
+
+    /* Pagina DISEÑO WEB */
+
+    /* Section 1 | Diseño web  */
+
+    .webdesign_s1 {
+        padding-top: 202px;
+    }
+
+    .webdesign_s2 {
+        height: 525px;
+    }
+
+    .webdesign_s2 img {
+        width: 220px;
+        height: 400px;
+    }
+
+
+    .web_texto{
+       margin: 37px auto 30px;
+    }
+
+     /* Section 3 | Diseño web  */
+    .iconoweb {
+        width: 54%;
+    }
+
+
+    /* Section 4 | Web design */
+
+    .img_muestra {
+        width: 66%;
+        height: 504px;
+        margin: 67px auto 0px;
+    }
+
+     /* Section 5 | Diseño web  */
+
+     .webdesign_s5 {
+        height: 194px;
+     }
+
+
+    .icono_webdesign_s5 p {
+        width: 83%;
+    }
+
+    /* Section  6 */
+
+    .web_s6 {
+        height: 362px;
+        margin-bottom: 51px;
+    }
+
+      /* PAGINA PROTOTIPO  */
+
+      .sect_1_prot h2 {
+        padding-top: 216px;
+    }
+
+
+    .prot_1 img{
+        width: 194px;
+        height: 349px;
+        margin: 30px auto;
+    }
+
+    .descripcion_prot{
+        width: 92%;
+    }
+
+    .prot_2 img {
+        height: 372px;
+    }
+
+    /* VIDEO */
+
+    /* Section 1 | Video  */
+    
+    .video_s1 h2 {
+        padding-top: 25%;
+    }
+
+    .video_s1_content {
+        width: 625px;
+        height: 351px;
+    }
+
+    /* Section 2 | Video  */
+
+    .video_s2 i {
+        font-size: 40px;
+    }
+
+    /* Section 3 | Video  */
+
+    .carrusel_video {
+        width: 308px;
+        height: 541px;
+    }
+
+    /* Section 4 | Video */
+
+    .video_s4 {
+        padding-top: 37px;
+    }
+
+    .video_s4 div {
+        width: 235px;
+        height: 235px;
+        margin: 20px 0px;
+    }
+
+    /* PAGINA ABOUT ME */
+
+    .about_me_s1 img {
+        width: 222px;
+        height: 222px;
+    }
+
+    .about_me_s1 p {
+        width: 35%;
+    }
+
+    .about_me_s1 {
+        padding-top: 228px;
+    }
+
+    /* Section 2  | Diseño Web */
+
+    .about_me_s2 div {
+        width: 189px;
+        height: 189px;
+        margin: 78px auto;
+    }
+
+    .about_me_s2 i {
+        padding-top: 51px;
+        font-size: 44px;
+    }
+
+    /* Section 3 | Diseño Web  */
+
+    .about_me_s3 {
+        height: 346px;
+        margin: 37px auto 70px;
+    }
+
+    .about_me_s3 div {
+        width: 60px;
+        height: 60px;
+        margin: 0px 41px;
+    }
+
+/* CONTACTO */
+   
+    .contacto {
+        width: 50%;
+        margin: 80px 20px 34px;
+    }
+
+    .contacto h1 {
+        padding-top: 74px;
+    }
+
+    .contacto_p {
+        margin: 53px auto 0px;
+    }
+
+    .contacto_s1_content{
+        width: 100%;
+        text-align: center;
+        padding-top: 202px;
+         /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto_s1_content img {
+        width: 289px;
+        height: 436px;
+    }   
+
+    .modal_contacto {
+        width: 343px;
+        height: 331px;
+        top: 275px;
+    }
+
+    .btn_close_modal {
+        width: 50px;
+        height: 50px;
+        margin: 55px auto 0px;
+        font-size: 21px;
+    }
+
+    .footer_contacto{
+        padding-top: 120px;
+    }
+
+    /* PAGINA TERMINOS */
+
+    .terminos h3 {
+        padding-top: 187px;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    
+
+    i{
+      font-size: 46px;
+    }
+
+    /* Recursivas */
+    .btn_seemore2,
+    .btn_cta{
+        font-size: 18px;
+    }
+
+    /* GENERAL */
+
+    .rrss_mob {
+        padding-left: 23px;
+    }
+
+    .menu_mob {
+        width: 45%;
+        right: 28px;
+    }
+
+    .btn_close {
+        top: 13px;
+        right: 401px;
+    }
+
+  
+/* Especificos */
+
+    /* HOME */
+
+    .s1 h2 {
+        top: 295px;
+    }
+
+   .s1 img {
+    height: 769px;
+   }
+
+   /* Section 2 */
+
+   .galeria {
+    width: 100%;
+   }
+
+   .galeria img {
+    width: 381px;
+    height: 542px;
+   }
+
+   /* Section 3 */
+
+   .s3 {
+    margin-top: 131px;
+   }
+
+   .div1{
+    width: 60%;
+    height: 562px;
+    margin: auto;
+   }
+
+
+   .s3_exp{
+    margin: 16px auto;
+   }
+
+
+    .btn_seemore1 {
+        top: 84%;   
+        font-size: 18px;
+    }
+
+    /* Section 4 */
+
+    .caja {
+        margin: 43px auto;
+        width: 450px;
+        height: 450px;
+    }
+
+    /* Pagina Fotografia */
+
+    .footer_foto {
+        padding-top: 32%;
+    }
+
+
+    /* PAgina Viajes | Fotografia  */
+
+    .galeriaR img {
+        width: 285px;
+        height: 285px;
+    }
+
+
+    
+    /* WEB DESIGN */
+
+    .webdesign_s2 {
+        height: 590px;
+    }
+
+    .webdesign_s2 img {
+        width: 250px;
+        height: 438px;
+    }
+
+
+    .img_muestra {
+        width: 66%;
+        height: 675px;
+    }
+
+    .web_s4_2 button {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .web_s6 {
+        height: 432px;
+        margin: 105px auto;
+    }
+
+    .web_s7{
+        height: 75px;
+        margin-bottom: 66px;
+    }
+
+     /* PAGINA PROTOTIPO  */
+
+     .prot_1 img{
+        width: 232px;
+        height: 413px;
+    }
+
+    .descripcion_prot{
+        width: 90%;
+    }
+
+    .prot_2 img {
+        height: 422px;
+    }
+
+
+    /* Pagina  VIDEO */
+
+    /* Section 1 | PAgina Video */
+    
+    .video_s1 h2 {
+        padding-top: 22%;
+    }
+    
+    .video_s1_content {
+        height: 442px;
+        width: 778px;
+    }
+
+    /* Section 2 */
+
+    .video_s2{
+        /*flex*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Section 3 */
+
+    .video_s3_content {
+        position: relative;
+        z-index: 1000;
+        width: 71%;
+        margin: auto;
+    }
+
+    .video_s3_content .carousel {
+        margin: 0 60%;
+    }
+
+    .video_s3_content p {
+        position: absolute;
+        top: 138px;
+        left: 0px;
+        z-index: 1000;
+        width: 37%;
+        text-align:left ;
+    }
+
+    /* Section 4 | Video */
+
+    .video_s4{
+        padding-top: 121px;
+    }
+
+    .video_s4 div {
+        width: 286px;
+        height: 286px;
+        margin: 27px 0px;
+    }
+
+    /* PAGINA SOBRE MI  */
+
+    /* Section 1 */
+
+    .about_me_s1 img {
+        width: 278px;
+        height: 278px;
+    }
+
+    /* Section 2 */
+
+    .about_me_s2 div {
+        width: 246px;
+        height: 246px;
+        margin: 119px auto;
+    }
+
+    .about_me_s2 i {
+        padding-top: 81px;
+    }
+
+    /* Section 3 | Sobre mi  */
+
+    .about_me_s3 div {
+        width: 72px;
+        height: 72px;
+        margin: 0px 53px;
+    }
+
+    .about_me_s3 {
+        height: 439px;
+        margin: 37px auto 114px;
+    }
+   
+
+    /* PAGINA CONTACTO  */
+
+    .contacto_s1_content img {
+        width: 370px;
+        height: 540px;
+    }
+
+    .contacto {
+        width: 38%;
+        margin: 13px 20px 34px;
+    }
+
+    .contacto h2{
+        margin-bottom: 33px;
+        margin: 60px 20px 34px;
+    }
+
+    .contacto_s1 input {
+        width: 345px;
+    }
+
+    .contacto_s1 textarea {
+        width: 342px;
+    }
+
+    .footer_contacto {
+        padding-top: 58px;
+    }
+
+    /* PAGINA TERMINOS */
+
+    .terminos h3 {
+        padding-top: 205px;
+    }
+}
+
+
+@media (min-width: 1280px){
+
+    /* Normalizadores */
+    .btn_up {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn_up i {
+        font-size: 32px;
+    }
+
+    /* Recursivas */
+
+
+
+    /* Pagina Terminos */
+    .terminos p, 
+    .terminos a, 
+    .terminos li{
+        width: 77%;
+        font-size: 18px !important;
+    }
+
+
+/* GENERAL */
+
+    header {
+        width: 100%;
+        height: 200px;
+        padding-top: 10px;
+    }
+
+    .menu_desktop{
+        width: 100%;
+        position: relative;
+        z-index: 1500;
+        /*flex*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
+    .menu_desktop a{
+        font-size: 20px;
+        color: #041C31;
+    }
+
+    .logo2{
+        width: 170px;
+        height: 143px;
+        padding-left: 25px;
+    }
+
+    .logo2 img{
+        width: 100%;
+    }
+        
+    .nav_desktop {
+        display: block;
+        /*flex*/
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_desktop a{
+        margin: 0px 18px;
+        font-size: 18px;
+    }
+
+    .nav_desktop > ul{
+        list-style: none;
+        /*flex*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn_foto_dsk,
+    .btn_diseno_dsk{
+        font-size: 20px;
+        color: #041C31;
+        background-color: transparent;
+        border: none;
+        margin: 0px 10px;
+    }
+
+    .btn_foto_dsk i,
+    .btn_diseno_dsk i{
+        margin-left: 14px;
+        font-size: 26px;
+    }
+
+    .Foto_desp_dsk{
+        flex-direction: column;
+        align-items: flex-start !important;
+        position: absolute;
+        top: 81px;
+        right: 692px;
+        z-index: 1600;
+        border-radius: 7px;
+        background-color: #041C31;
+        display: none;
+    }
+
+    .Foto_desp_dsk li,
+    .menu_diseno_dsk li{
+        margin: 10px 0px;
+        text-transform: uppercase;
+    }
+
+    .menu_diseno_dsk a,
+    .Foto_desp_dsk a{
+        color: #EDF7FF;
+    }
+
+    .menu_diseno_dsk{
+        flex-direction: column;
+        align-items: flex-start !important;
+        position: absolute;
+        top: 81px;
+        right: 532px;
+        z-index: 1600;
+        background-color: #041C31;
+        border-radius: 7px;
+        display: none;
+    }
+    
+    .menu_mob,
+    .btn_menu_mob,
+    .menu,
+    .rrss_mob,
+    .logo{
+        display: none;
+    }
+
+    
+    .rrss_desktop {
+        width: 97%;
+        margin: 5px 40px;
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    .rrss_desktop a{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: #041C31;
+        border: 1px solid #041C31;
+        margin-right: 12px;
+    }
+
+    .rrss_desktop i{
+        font-size: 14px;
+
+    }
+
+
+    /* ESPECIFICOS */
+
+    /* HOME */
+
+    /* Section 1 */
+    .s1 h2 {
+        top: 260px;
+        line-height: 61px;
+        }
+
+    .s1 h2 a{
+        font-size: 43px;
+    }
+    .s1 img {
+        height: 719px;
+    }
+
+  
+
+    /* section 2 */
+
+    .s2 h1 {
+        width: 31%;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        text-align: center;
+        z-index: 40;
+    }
+
+
+    .galeria {
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        /* flex */
+        justify-content: center;
+        flex-wrap:nowrap;
+    }
+
+    .galeria div {
+        width: 28%;
+    }
+
+    .galeria img {
+        width: 281px;
+        height: 440px;
+        margin: 0px 15px;
+    }
+
+    .leyenda {
+        top: 222px;
+        right: -17%;
+    }
+
+    
+    /* SECTION 3 */
+
+    .s3{
+        position: relative;
+        z-index: 2000;
+    }
+
+
+    .div1{
+        width: 50%;
+        position: absolute;
+        top: 0px;
+        right: 32px;
+        z-index: 2500;
+    }
+
+    .s3_content h1 {
+        top: -54px;
+        left: -25%;
+        width: 67%;
+        margin: 0px;
+    }
+
+
+    .s3_exp {
+        width: 40%;
+        position: absolute;
+        top: 140px;
+        left: 40px;
+    }
+
+    .btn_seemore1 {
+        top: 82%;
+    }
+
+    /* SECTION 4 */
+
+    .s4{
+        padding-top: 622px;
+    }
+
+    .s4 h1 {
+    
+        width: 78%;
+        left: 24px;
+        top: 46px;
+    }
+
+
+    .caja {
+        margin: 13px auto;
+        width: 540px;
+        height: 540px;
+    }
+
+    .s4_exp {
+        width: 48%;
+    }
+    
+    /* FOOTER */
+
+    .footer_mob {
+        margin-top: 49px;
+    }
+
+    /* FOTOGRAFIA  */
+
+    .foto_s1 h2 {
+        padding-left: 2%;
+    }
+
+    .footer_foto {
+        padding-top: 1%;
+    }
+    
+
+    /* Pagina Viajes | Fotografia */
+
+    .galeriaP {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    
+    .galeriaR h2 {
+        padding-top: 220px;
+    }
+
+    
+    .galeriaR img {
+        width: 320px;
+        height: 320px;
+    }
+
+
+    /* DISEÑO WEB */
+
+    /* Section 1 */
+    
+    .webdesign_s1 {
+        padding-top: 207px;
+    }
+   
+    .webdesign_s1 h2 {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .web_texto{
+        width: 45%;
+        margin: auto;
+    }
+    .webdesign_s2 {
+        width: 86%;
+        margin: auto;
+    }
+
+    .iconoweb {
+        width: 37%;
+    }
+    .iconoweb p {
+        width: 66%;
+        margin: auto;
+    }
+
+    .texto_2 {
+        width: 36%;
+    }
+
+    .webdesign_s3{
+        margin: 90px auto 10px;
+    }
+
+
+    .linea_webdesign_s3 {
+        width: 26%;
+        height: 2px;
+        background-color: #041C31;
+        margin: 67px auto 34px;
+    }
+
+    /* Section 4 */
+
+    .web_s4_2 {
+        margin-top: 0px;
+    }
+
+    .img_muestra {
+        width: 40%;
+        height: 509px;
+    }
+
+    .img_tab {
+        width: 88%;
+        height: 100%;
+        padding-left: 58px;
+    }
+
+    .web_s4_2 i {
+        font-size: 45px;
+    }
+
+    /* Section 5 */
+
+    .icono_webdesign_s5 {
+        margin: 60px auto;
+    }
+
+    /* PAGINA PROTOTIPO  */
+
+    .sect_1_prot h2 {
+        padding-top: 217px;
+    }
+
+
+    .prot_1 img{
+        margin: 32px 50px;
+    }
+
+   .descripcion_prot {
+       width: 71%;
+   }
+
+    /* Pagina VIDEO */
+
+    /* Section 1 | Video */
+
+    .video_s1 h2 {
+        padding-top: 206px;
+    }
+
+    /* Section 3 */
+
+    .video_s2 {
+        width: 60%;
+        margin: 24px auto 0px;
+    }
+
+    .video_s2 p {
+        font-size: 16px;
+    }
+
+    .video_s3 {
+        width: 63%;
+        margin: auto;
+    }
+
+    .video_s3_content {
+        width: 100%;
+    }
+
+    /* CARRUSEL VIDEO */
+
+    .video_s3_content .carousel-cell {
+        width: 316px;
+        height: 435px;
+    }
+
+    
+      
+      .video_s3_content .carousel-cell {
+        width: 316px;
+        height: 435px;
+        margin-right: 10px;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+      }
+      
+      /* cell number */
+      .video_s3_content .carousel-cell:before {
+        display: none;
+        text-align: center;
+        content: counter(gallery-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+      }
+      
+      
+      /* smaller, dark, rounded square */
+      .video_s3_content .flickity-prev-next-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background: #333;
+      }
+      .video_s3_content .flickity-prev-next-button:hover {
+        background: #F90;
+      }
+      /* arrow color */
+      .video_s3_content .flickity-prev-next-button .arrow {
+        fill: #041C31;
+      }
+      .video_s3_content .flickity-prev-next-button.no-svg {
+        color:#041C31;
+      }
+      /* position outside */
+      .video_s3_content .flickity-prev-next-button.previous {
+        left: 6px;
+        border: none;
+        background-color: transparent;
+      }
+      .video_s3_content .flickity-prev-next-button.next {
+        border: none;
+        background-color: transparent; 
+        right: 0px;
+      }
+
+      .video_s3_content .flickity-prev-next-button .flickity-button-icon {
+        position: absolute;
+        left: 12%;
+        top: 20%;
+        width: 60%;
+        z-index: 1600;
+      }
+
+
+      .flickity-prev-next-button.next {
+        right: -51px;
+      }
+
+      .video_s3_content .flickity-page-dots{
+          list-style: none;
+          left: -6px;
+      }
+
+
+    /* FIN CARRUSEL VIDEO *
+
+    /* CARRUSEL VIDEO */
+
+    .video_s3_content p {
+        top: 166px;;
+        left: 0px;
+        width: 41%;
+        margin: 0px;
+    }
+
+    .video_s4 {
+        padding-top: 63px;
+    }
+
+    .video_s4 div {
+        width: 255px;
+        height: 255px;
+        margin: 29px 40px;
+    }
+
+    
+    /* Pagina About Me */
+
+    .about_me_s1 img {
+        width: 321px;
+        height: 321px;
+    }
+
+    .about_me_s2 {
+        width: 89%;
+        margin: auto;
+    }
+
+    .about_me_s3 div {
+        width: 79px;
+        height: 79px;
+        margin: 0px 88px;
+    }
+
+    /* PAGINA TERMINOS  */
+
+    .terminos h3 {
+        padding-top: 248px;
+    }
+
+    
+}
+
+@media (min-width: 1920px){
+    
+    /* NORMALIZADORES */
+        
+    h1{
+        font-size: 64px;
+    }
+    
+    h2 {
+        font-size: 44px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 28px;
+    }
+
+    span{
+        font-size: 28px;
+    }
+
+    ol{
+        font-size: 28px;
+    }
+    
+    i{
+        font-size: 70px;
+    }
+
+    a{
+        font-size: 28px;
+    }
+
+    .btn_up {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Reglas Rcursivas */
+    
+    .btn_seemore2,
+    .btn_cta {
+        width: 200px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .nav_desktop a{
+        font-size: 30px;
+    }
+
+    .btn_foto_dsk i, 
+    .btn_diseno_dsk i{
+        font-size: 32px;
+        margin-left: 7px;
+    }
+
+    .terminos p, 
+    .terminos a, 
+    .terminos li{
+        font-size: 20px !important;
+        width: 67%;
+    }
+
+    /* GENERAL */
+
+    header{
+        width: 100%;
+        height: 267px;
+    }
+
+    .logo2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .rrss_desktop a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rrss_desktop i {
+        font-size: 19px;
+    }
+
+
+    .nav_desktop a {
+        font-size: 26px;
+    }
+
+    .Foto_desp_dsk {
+        top: 115px;
+        right: 902px;
+    }
+
+    .menu_diseno_dsk {
+        top: 115px;
+        right: 708px;
+    }
+    
+
+    .footer_mob {
+        height: 102px;
+    }
+
+    .footer_mob a {
+        font-size: 31px;
+    }
+
+    .rrss_footer i {
+        font-size: 34px;
+    }
+
+    /* ESPECIFICOS */
+
+
+    /* HOME */
+
+    /* Section 1 | Home */
+    
+    .s1 img {
+        height: 1080px;
+    }
+
+    .s1 h2{
+        top: 383px;
+        line-height: 69px;
+    }
+
+    /* Section 2 | Home */
+
+    .s2 h1 {
+        width: 25%;
+        top: 32px;
+        left: 0px;
+      
+    }
+
+    .btn_seemore1 {
+        top: 85%;
+        width: 200px;
+        height: 60px;
+        font-size: 23px;
+    }
+
+    .galeria img {
+        width: 424px;
+        height: 637px;
+        margin: 0px 20px;
+    }
+
+    .leyenda {
+        top: 313px;
+        right: -17%;
+        font-size: 22px;
+    } 
+
+    /* Section 3 */
+
+    .s3_exp {
+        width: 41%;
+        position: absolute;
+        top: 110px;
+        left: 212px;
+    }
+
+
+    .div1 {
+        width: 37%;
+        position: absolute;
+        top: 0px;
+        right: 142px;
+        z-index: 2500;
+    }
+    
+    .s3 i {
+        font-size: 70px;
+    }
+
+    .s3 p {
+        margin: 32px auto;
+    }
+
+    .s3 a {
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    /* Section 4 */
+
+    .s4 {
+        padding-top: 36%;
+        margin: 0px;
+    }
+
+    .s4_content h1 {
+        width: 71%;
+    }
+
+    .s4_content i {
+        font-size: 70px;
+    }
+
+    .caja {
+        height: 858px;
+        width: 858px;
+    }
+    
+     /* Pagina Fotografia */
+
+     .enlace_foto {
+        width: 350px;
+        height: 350px;
+        margin: 60px 30px;
+     }
+
+     .foto_s1 h2 {
+        padding: 8% 0px 2%;
+    }
+
+    /* Pagina Viajes | Fotografia  */
+    
+
+    .galeriaR {
+        width: 88%;
+        margin: auto;
+    }
+
+    .galeriaR h2 {
+        padding-top: 295px;
+    }
+
+    .galeriaR img {
+        width: 392px;
+        height: 392px;
+        margin: 9px 14px;
+    }
+
+
+    /* Pagina DISEÑO WEB  */
+
+    /* Pagina Diseño Web  */
+    
+    .webdesign_s1 {
+        padding-top: 282px;
+    }
+
+
+    .webdesign_s2 {
+        width: 77%;
+    }
+
+    .webdesign_s2 img {
+        width: 303px;
+        height: 524px;
+    }
+    
+    .webdesign_s3 {
+        margin: 55px auto;
+    }
+
+    .iconoweb {
+        width: 37%;
+    }
+
+    .iconoweb p {
+        width: 75%;
+    }
+
+    .texto_2 {
+        width: 39%;
+    }
+    
+
+    /* Section 2 | PAgina Diseño Web  */
+
+    .img_muestra {
+        width: 35%;
+        height: 669px;
+    }
+
+    .img_mob {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_tab {
+        padding-left: 77px;
+    }
+
+    .img_dsk {
+        width: 114%;
+    }
+
+   
+
+    .web_s4_2 button {
+        width: 118px;
+        height: 110px;
+    }
+
+    .web_s4_2 i {
+        font-size: 63px;
+    }
+    
+    /* Section 5 | Pagina diseño web */
+    .webdesign_s5 {
+        width: 77%;
+    }
+
+    .icono_webdesign_s5 i {
+            margin-right: 94px;
+        }
+    /* Section 6 | Pagina Web design */
+
+    .web_s6 {
+        height: 669px;
+        margin: 100px auto;
+    }
+
+     /* PAGINA PROTOTIPO  */
+
+     .sect_1_prot h2 {
+        padding-top: 306px;
+    }
+
+     .descripcion_prot {
+        width: 57%;
+     }
+     
+
+    .prot_1 img {
+        width: 297px;
+        height: 521px;
+    }
+    
+    .prot_2{
+        width: 70%;
+        margin: auto;
+    }
+
+    .prot_2 h3 {
+        margin: 103px auto 41px;
+    }
+
+    .prot_2 img {
+        height: 685px;
+    }
+
+
+
+    /* Pagina VIDEO */
+    
+    /* Section 1 | Pagina video */
+
+    .video_s1 h2 {
+        padding-top: 278px;
+    }
+
+    .video_s1_content {
+        width: 1010px;
+        height: 566px;
+    }
+
+    /* Section 2 | Pagina video */
+
+    .video_s2 {
+        margin: 92px auto 15px;
+    }
+
+    .video_s2 i {
+        font-size: 70px;
+    }
+
+    .video_s2 p {
+        font-size: 34px;
+    }
+
+    /* Section 3 | Pagina video */
+
+    /* CARRUSEL */
+
+    .video_s3 {
+        width: 52%;
+    }
+
+    .video_s3_content .carousel,
+    .video_s3_content .carousel-cell {
+        width: 349px;
+        height: 619px;
+    }
+
+    
+
+    /* FIN CARRUSEL */
+
+    .video_s3_content p {
+        top: 238px;
+        width: 40%;
+    } 
+
+    /* Section 4 | PAgina Video */
+
+    .video_s4 {
+        padding-top: 148px;
+        width: 82%;
+        margin: auto;
+    }
+
+    .video_s4 div {
+        width: 405px;
+        height: 405px;
+    }
+
+    /* Section 5 | Pagina Video */
+
+    .video_s4 p {
+        width: 50%;
+        margin: 70px auto;
+        font-size: 34px;
+    }
+
+
+    /* SOBRE MI */
+
+    /* Section 1 | Pagina About me */
+
+    .about_me_s1 {
+        padding-top: 310px;
+    }
+
+    .about_me_s1 img {
+        width: 367px;
+        height: 367px;
+    }
+
+    /* Section 2 | PAgina About me */
+
+    .about_me_s2 {
+        width: 75%;
+    }
+
+    .about_me_s2 div {
+        width: 309px;
+        height: 309px;
+        margin: 113px auto;
+    }
+
+    /* Section 3 */
+
+    .about_me_s3 {
+        height: 502px;
+        width: 84%;
+    }
+
+    .about_me_s3 div {
+        width: 103px;
+        height: 103px;
+        margin: 0px 105px;
+    }
+   
+
+    /* CONTACTO */
+
+    .contacto_s1_content {
+        padding-top: 316px;
+    }
+
+    .contacto_s1 input {
+        width: 397px;
+    }
+
+    .contacto_s1 textarea {
+        width: 398px;
+    }
+
+    .contacto_s1_content img {
+        width: 452px;
+        height: 663px;
+    }
+
+    .contacto_p {
+        margin: 74px auto 0px;
+    }
+
+    .modal_contacto {
+        width: 451px;
+        height: 408px;
+    }
+
+    /* PAGINA TERMINOS  */
+
+    .terminos h3 {
+        padding-top: 284px;
+    }
+
+}
+
+@media (min-width: 2560px){
+
+    /* NORMALIZADORES */
+        
+    h1{
+        font-size: 74px;
+    }
+    
+    h2 {
+        font-size: 54px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+
+    h4{
+        font-size: 38px;
+    }
+
+    p{
+        font-size: 38px;
+    }
+
+    a {
+        font-size: 35px;
+    }
+
+    span{
+        font-size: 38px;
+    }
+
+    ol{
+        font-size: 38px;
+    }
+
+    .btn_up {
+        width: 80px;
+        height: 80px;
+    } 
+
+    .btn_up i {
+        font-size: 51px;
+    }
+
+    /* Recursivas */
+
+    .terminos p, 
+        .terminos a, 
+        .terminos li{
+            font-size: 34px !important;
+            width: 84%;
+        }
+        
+
+    /* GENERAL */
+
+    header{
+        height: 375px;
+    }
+
+    .logo2 {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .rrss_desktop {
+        margin: 5px 70px;
+    }
+
+    .rrss_desktop a {
+        width: 55px;
+        height: 55px;
+    }
+
+    .rrss_desktop i {
+        font-size: 25px;
+    }
+
+    .Foto_desp_dsk {
+        top: 168px;
+        right: 1162px;
+    }
+
+    .menu_diseno_dsk {
+        top: 168px;
+        right: 900px;
+    }
+
+    .nav_desktop a {
+        font-size: 34px;
+    }
+
+    .btn_foto_dsk i, 
+    .btn_diseno_dsk i{
+        font-size: 45px;
+        margin-left: 11px;
+    }
+
+    .rrss_footer i{
+        font-size: 40px;
+    }
+
+    /* Especificos */
+
+
+    /* Section 1  */
+
+    .s1 h2 {
+        top: 528px;
+        line-height: 105px;
+    }
+
+    .s1 h2 a{
+        font-size: 66px;
+    }
+
+    .s1 img {
+        height: 1436px;
+    }
+
+    /* Section 2 */
+    .s2 h1 {
+        width: 23%;
+        top: 40px;
+        left: 0px;
+    }
+
+    .galeria img {
+        width: 512px;
+        height: 746px;
+    }
+
+    .leyenda {
+        top: 376px;
+    }
+
+    .s3_exp {
+        top: 156px;
+    }
+
+    /* Section 3 */
+
+    .div1 {
+        height: 812px;
+    }
+
+    /* Section 4 */
+    .s4 h1 {
+    width: 78%;
+    left: 143px;
+    top: 50px;
+    }
+
+    /* Pagina Fotografia  */
+
+    .foto_s1 h2 {
+        padding: 11% 0px 2%;
+    }
+
+    .enlace_foto {
+        width: 500px;
+        height: 500px;
+        margin: 84px 34px;
+    }
+    
+    /* Pagina Viajes */
+
+    .galeriaR {
+        width: 74%;
+    }
+
+    .galeriaR h2 {
+        padding-top: 420px;
+    }
+
+    .galeriaR img {
+        width: 415px;
+        height: 415px;
+        margin: 9px 40px;
+    }
+
+    /* Pagina Video */
+
+    .video_s1 h2 {
+        padding-top: 383px;
+    }
+
+    .video_s1_content {
+        width: 1319px;
+        height: 736px;
+    }
+
+     /* CARRUSEL VIDEO */
+
+     .video_s3_content .carousel,
+     .video_s3_content .carousel-cell  {
+        width: 475px;
+        height: 917px;
+      }
+
+      /* fin carrusel */
+
+      .video_s3_content p {
+        top: 43%;
+        width: 51%;
+    }
+      
+      
+
+
+    /* SECTION 4 | PAGINA VIDEO  */
+
+    .video_s4 {
+        width: 68%;
+    }
+
+    .video_s4 div {
+        margin: 22px 71px;
+        width: 383px;
+        height: 383px;
+    }
+
+    .video_s4 p {
+        margin: 115px auto 85px;
+    }
+
+
+    /* PAgina Diseño web  */
+
+    .webdesign_s1 {
+        padding-top: 467px;
+    }
+
+    .iconoweb {
+        width: 44%;
+    }
+
+    .webdesign_s2 {
+        width: 77%;
+        height: 798px;
+        margin: 82px auto;
+    }
+
+    .webdesign_s2 img {
+        width: 385px;
+        height: 706px;
+    }
+
+    .img_tab {
+        width: 78%;
+        height: 100%;
+        padding-left: 174px;
+    }
+
+    .img_dsk {
+        width: 106%;
+        padding-top: 0px;
+    }
+
+    .web_s7 p {
+        width: 56%;
+    }
+
+      /* PAGINA PROTOTIPO  */
+
+      .sect_1_prot h2 {
+        padding-top: 407px;
+    }
+
+    .prot_1 img {
+        width: 415px;
+        height: 737px;
+        margin: 78px ;
+    }
+
+   .descripcion_prot{
+       width: 63%;
+   }
+
+   .prot_2 img {
+    height: 892px;
+    }
+
+    
+    /* PAgina About me */
+
+    .about_me_s1 {
+        padding-top: 416px;
+    }
+
+    .about_me_s1 img {
+        width: 416px;
+        height: 416px;
+    }
+
+    .about_me_s2 div {
+        width: 393px;
+        height: 393px;
+        margin: 116px auto;
+    }
+
+    .about_me_s2 i {
+        padding-top: 133px;
+    }
+
+    .about_me_s3 div {
+        width: 103px;
+        height: 103px;
+        margin: 0px 156px;
+    }
+
+
+    /* PAGINA CONTACTO */
+
+    .contacto_s1_content {
+        width: 100%;
+        text-align: center;
+        padding-top: 450px;
+    }
+
+    .contacto {
+        width: 39%;
+    }
+
+    .contacto_s1_content img {
+        width: 612px;
+        height: 893px;
+    }
+
+    .contacto_s1 input {
+        width: 801px;
+        height: 58px;
+        font-size: 15px;
+    }
+    
+    .contacto_s1 textarea {
+        width: 800px;
+        height: 257px;
+        font-size: 15px;
+    }
+
+    .modal_contacto {
+        width: 619px;
+        height: 592px;
+        top: 436px;
+    }
+
+    .modal_contacto p {
+        margin: 89px auto 0px;
+    }
+
+    .btn_close_modal {
+        width: 85px;
+        height: 85px;
+        font-size: 41px;
+    }
+
+        /* PAGINA TERMINOS */
+
+        .terminos h3 {
+            padding-top: 460px;
+        }
+
+}
+
+
+@media (min-width: 3840px){
+
+    /* NORMALIZADORES */
+        
+     h1{
+        font-size: 84px;
+    }
+    
+    h2 {
+        font-size: 64px;
+    }
+
+    h3{
+        font-size: 50px;
+    }
+
+    h4{
+        font-size: 48px;
+    }
+
+    p{
+        font-size: 48px;
+    }
+
+    span{
+        font-size: 48px;
+    }
+
+    ol{
+        font-size: 48px;
+    }
+
+    a {
+        font-size: 45px;
+    }
+
+    i{
+        font-size: 90px;
+    }
+
+    .btn_up {
+        width: 90px;
+        height: 90px;
+    } 
+
+    .btn_up i {
+        font-size: 61px;
+    }
+
+    /* Reglas Rcursivas */
+
+    .btn_seemore2,
+    .btn_cta {
+        width: 332px ;
+        height: 127px ;
+        font-size: 45px ;
+    }
+
+    /* General */
+
+    header {
+        width: 100%;
+        height: 431px;
+        padding-top: 10px;
+    } 
+
+    .logo2 {
+        width: 366px;
+    }
+
+    .rrss_desktop {
+        margin: 20px 49px;
+    }
+
+    .footer_mob {
+        height: 146px;
+    }
+
+    .nav_desktop a{
+        font-size: 43px;
+    }
+
+    .btn_foto_dsk i, .btn_diseno_dsk i{
+        font-size: 47px;
+        margin-left: 25px;
+    }
+
+    .rrss_desktop a {
+        width: 90px;
+        height: 90px;
+    }
+
+    .rrss_desktop i {
+        font-size: 45px;
+    }
+
+    .Foto_desp_dsk {
+        top: 172px;
+        right: 1436px;
+    }
+
+    .menu_diseno_dsk {
+        top: 172px;
+        right: 1115px;
+    }
+
+
+    /* Footer */
+
+    .footer_contacto {
+        padding-top: 547px;
+    }
+
+    .footer_mob a {
+        font-size: 45px;
+        margin: 0px 14px;
+    }
+
+    .rrss_footer i {
+        font-size: 56px;
+        
+    }
+
+
+
+    /* Especificos  */
+
+    /* Home */
+
+    /* Section 1 */
+    
+    .s1 h2 {
+        top: 616px;
+        line-height: 120px;
+    }
+
+   
+
+    .s1 img {
+        height: 1650px;
+    }
+
+    /* Section 2 */
+
+    .btn_seemore1 {
+        width: 272px;
+        height: 88px;
+        font-size: 32px;
+    }
+    
+    .s2 h1 {
+        top: 45px;
+    }
+
+    .galeria img {
+        width: 712px;
+        height: 1033px;
+    }
+
+    .leyenda {
+        top: 423px;
+        right: -11%;
+        font-size: 36px;
+    }
+
+    /* Section 3 */
+
+    .div1{
+        height: 861px;
+        width: 950px;
+        right: 846px;
+    }
+
+    .s3_exp {
+        width: 31%;
+        top: 202px;
+        left: 791px;
+    }
+
+    /* Section 4 | Home */
+
+    .s4 {
+        padding-top: 982px;
+        margin: auto;
+        width: 73%;
+    }
+
+    .s4 h1 {
+        padding: 47px 273px 0px;
+    }
+
+    .caja {
+        height: 969px;
+        width: 969px;
+    }
+
+    .s4_exp {
+        width: 46%;
+    }
+
+    /* Pagina Fotografia */
+
+    .enlace_foto {
+        width: 600px;
+        height: 600px;
+        margin: 120px 34px;
+    }
+
+    .footer_foto {
+        padding-top: 347px;
+    }
+
+
+    /* Pagina viajes | Fotografia */
+
+    .galeriaR h2 {
+        padding-top: 475px;
+    }
+
+    .galeriaR img {
+        width: 600px;
+        height: 600px;
+        margin: 13px 89px;
+    }
+
+    /* Pagina Video  */
+
+    
+    .video_s1 h2 {
+        padding-top: 500px;
+    }
+
+    .video_s1_content {
+        width: 1918px;
+        height: 1073px;
+    }
+
+    /* Carrusel  */
+
+    .video_s3_content .carousel,
+    .video_s3_content .carousel-cell {
+        width: 762px;
+        height: 1355px;
+    }
+     
+    .flickity-page-dots .dot {
+        width: 21px !important;
+        height: 21px !important;
+        margin: -18px 8px !important;
+    }
+
+    .video_s3_content p {
+        top: 574px;
+    }
+
+    /* Section 4 | Video */
+
+    .video_s4 {
+        width: 76%;
+    }
+
+    .video_s4 div {
+        width: 600px;
+        height: 600px;
+        margin: 29px 181px;
+    }
+
+    /* PAGINA WEB DESIGN */
+
+    .webdesign_s1 {
+        padding-top: 465px;
+    }
+
+    .web_texto {
+        margin: 92px auto 107px;
+    }
+
+    .webdesign_s2 {
+        width: 75%;
+        height: 1170px;
+    }
+
+    .webdesign_s2 img {
+        width: 538px;
+        height: 975px;
+    }
+
+
+    .web_s4_2 button {
+        width: 187px;
+        height: 141px;
+    }
+
+    .web_s4_2 i {
+        font-size: 83px;
+    }
+
+    .webdesign_s5 {
+        height: 240px;
+        width: 75%;
+        margin: 168px auto;
+    }
+    
+    .img_muestra {
+        width: 29%;
+        height: 938px;
+    }
+
+    .img_tab {
+        width: 85%;
+        height: 98%;
+        margin-left: 59px;
+    }
+
+    .img_dsk {
+        width: 111%;
+        height: 99%;
+    }
+
+    .web_s6 {
+        height: 1044px;
+    } 
+
+    .web_s7 {
+        height: 94px;
+        margin-bottom: 122px;
+    }
+
+    .web_s7 p {
+        width: 46%;
+    }
+
+
+     /* PAGINA PROTOTIPO  */
+
+     .sect_1_prot h2 {
+        padding-top: 522px;
+    }
+
+    .prot_1 img {
+        width: 539px;
+        height: 957px;
+    }
+
+    .descripcion_prot {
+        width: 51%;
+        margin: 105px auto;
+    }
+
+    
+    .prot_2 h3{
+        width: 85%;
+    }
+
+    .prot_2 img {
+        height: 1341px;
+    }
+
+
+    /* Pagina About me  */
+
+    .about_me_s1 {
+        padding-top: 486px;
+    }
+
+    .about_me_s1 img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .about_me_s2 {
+        width: 63%;
+    }
+
+    .about_me_s2 div {
+        width: 450px;
+        height: 450px;
+        margin: 131px auto;
+    }
+
+    .about_me_s3 {
+        height: 567px;
+        width: 62%;
+    }
+
+
+    /* Pagina Contacto */
+
+    .contacto_s1_content {
+        padding-top: 540px;
+    }
+
+    .modal_contacto {
+        width: 833px;
+        height: 761px;
+        top: 540px;
+    }
+
+    .modal_contacto p {
+        margin: 114px auto 0px;
+    }
+
+    .btn_close_modal {
+        width: 110px;
+        height: 110px;
+        font-size: 49px;
+        margin: 85px auto 0px;
+    }
+
+    .contacto_s1_content img {
+        width: 698px;
+        height: 987px;
+
+    }
+    .contacto_s1 input {
+        width: 880px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    .contacto_s1 textarea {
+        width: 880px;
+        height: 351px;
+        font-size: 20px;
+    }
+
+    .footer_contacto {
+        padding-top: 264px;
+    }
+
+    /* PAGINA TERMINOS  */
+
+    .terminos h3 {
+        padding-top: 502px;
+    }
+}
